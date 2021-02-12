@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive gallery</title>
+
+    <style>
+        
+        body {
+            font-family: 'Times New Roman';
+            font-size: 1,3em
+        }
+
+        p {
+            font-size: 1em;
+            margin-top: 40px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 40px;
+        }
+
+        @media screen and (max-width: 1024px) {
+        body {
+        font-size: 1.2em;
+        }
+        }
+        
+        @media screen and (max-width: 768px) {
+        body {
+        font-size: 1.1em;
+        }
+        }
+        
+        @media screen and (max-width: 414px) {
+        body {
+        font-size: 1em;
+        }
+        }
+
+        #main {
+            max-width: 960px;
+            width: 90%;
+            margin: 0 auto;
+            color: rgb(73, 73, 73);
+        }
+
+        #container {
+            display: grid;
+            grid-template-columns: repeat(5, 160px);
+            grid-template-rows: repeat(2, 150px);
+            row-gap: 40px;
+            column-gap: 40px;
+            justify-content:space-between;
+        }
+
+        @media screen and (max-width: 1024px) {
+        #container {
+        grid-template-columns: repeat(5, 160px);
+        grid-template-rows: 150px 150px;
+        }
+        }
+        
+        @media screen and (max-width: 768px) {
+        #container {
+        grid-template-columns: repeat(3, 160px);
+        grid-template-rows: repeat(4, 150px);
+        }
+        }
+        
+        @media screen and (max-width: 414px) {
+        #container {
+        grid-template-columns: repeat(1, 160px);
+        grid-template-rows: repeat(10, 150px);
+        }
+        }
+
+        #grid {
+            display: grid;
+            grid-template-rows: 5fr 1fr;
+        }
+
+        .background {
+            background-color: rgb(115, 162, 223);
+            background-image: url(placeholder-image.png); 
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 8px 8px 0px 0px;
+        }
+
+        .box {
+            text-align: center;
+            padding: 5px;
+            border-radius: 0px 0px 8px 8px;
+            box-shadow: 0 0 14px #9eabb1;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1>Gallery heading</h1>
+
+        <div id="container">
+            <div id="grid">
+                <div class="background"></div>
+                <div class="box">Image Title</div>
+            </div>
+            <div id="grid">
+                <div class="background"></div>
+                <div class="box">Image Title</div>
+            </div>
+            <div id="grid">
+                <div class="background"></div>
+                <div class="box">Image Title</div>
+            </div>
+            <div id="grid">
+                <div class="background"></div>
+                <div class="box">Image Title</div>
+            </div>
+            <div id="grid">
+                <div class="background"></div>
+                <div class="box">Image Title</div>
+            </div>
+            <div id="grid">
+                <div class="background"></div>
+                <div class="box">Image Title</div>
+            </div>
+            <div id="grid">
+                <div class="background"></div>
+                <div class="box">Image Title</div>
+            </div>
+            <div id="grid">
+                <div class="background"></div>
+                <div class="box">Image Title</div>
+            </div>
+            <div id="grid">
+                <div class="background"></div>
+                <div class="box">Image Title</div>
+            </div>
+            <div id="grid">
+                <div class="background"></div>
+                <div class="box">Image Title</div>
+            </div>
+          
+        </div>
+        
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur eius molestiae maxime vel suscipit nemo cumque, repellat magni tenetur ad facere inventore perspiciatis. 
+            Inventore fuga ipsam placeat quisquam deleniti ab! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, recusandae et? Ut, atque nostrum dolorum totam veniam unde error. 
+            Ratione perferendis cumque dolorem adipisci excepturi incidunt consectetur neque facilis atque. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Repellat nemo ducimus iste nihil repudiandae assumenda ratione dolore nesciunt porro dolor architecto iusto totam, dicta eveniet a quae veniam eligendi aliquid.</p>
+    </div>
+</body>
+</html>
